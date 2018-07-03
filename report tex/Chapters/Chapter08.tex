@@ -1,0 +1,14 @@
+% Main chapter title
+\chapter{Conclusion and Future Work}
+\label{ch:dl}
+
+% This is for the header on each page
+\lhead{Chapter 4. \emph{Conclusion and Future Work}}
+\thispagestyle{empty}
+In this work we have presented 4 different machine learning models that are trained on a well-known permission classification dataset. We could improve the identification and classification on Android apps with higher accuracy than the available current methods. We have presented our approach with running case studies on a few Android apps and presented our tool's accuracy in identification of malicious apps. Our approach involved a mix of static and dynamic analysis such that even the apps that have unused APIs present in the code that can be traversed post classification of the app as benign by the application store. We have restricted the malicious behaviour of application without interrupting its execution.
+
+
+%Our tool restricts applications from performing any malicious activity. For restricting the malicious behaviour of application, we have analyzed the application using both dynamic and static analysis. After doing analysis, we have proposed the possible description of applications. After analysis, we have classified the applications as benign or malicious. After identifying the malicious application, we have restricted the malicious behaviour of application.\\
+
+As an extension of this work, one may automate the process of permission classification of installed apps.
+Currently, we are manually deciding which permissions are causing malicious behaviour in a particular application. We can integrate our app classification model with a tool which can give the list permissions which are causing the malicious behaviour.

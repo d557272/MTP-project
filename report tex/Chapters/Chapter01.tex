@@ -1,0 +1,40 @@
+% Main chapter title
+\chapter{Introduction}
+\label{ch:intro}
+
+% This is for the header on each page
+\lhead{Chapter 1. \emph{Introduction}}
+\thispagestyle{empty}
+Android mobile devices is becoming very popular due to ease of use and its user-friendliness User Interface (UI). There is monopoly of Android in mobile device market. Nearly 82\% of smartphones run Android Operating System \cite{smartphoneos} . Due to such a large market share, malware authors are targeting Android mobile devices. The Android is the fastest growing mobile operating system. Unlike Apple's App Store, deploying an application in Google Play Store is much easier. Google takes minimal steps for inspection of applications this allows anyone to publish applications on the Android market. If an application is reported as malware by users, it will then be removed. Due to large market share and easy deployment policy, malware authors are targetting Android. Malware authors are creating malicious application to compromise Android security. According to AO Kaspersky Lab, following Android security issues were in trend in 2016:
+\begin{itemize}
+    \item Third party applications using super user permissions.
+    \item Development of new mechanism to pass security system.
+    \item Ransomware i.e encrypting mobile devices.
+    \item Continuous improvement in Mobile Banking Trojans.
+    \item Deploying malicious application in Google Play Store.
+\end{itemize}
+\newline
+In 2016, Kaspesky Lab detected the following:
+\begin{itemize}
+    \item 8,534,221 malicious installation packages
+    \item 136,786 mobile banking Trojans
+    \item 251,114 mobile ransomware Trojans
+\end{itemize}
+
+%---------------------------------------------------------------------%
+
+Malicious applications frequently easily passes the security suite of Google's Play Protect security suite, and some applications attracts millions of downloads before Google can find and remove them. Recently the security firm Check Point discovered a new type of Android malware called ``Expensive Wall" hidden in 50 apps in the Play Store. They have been cumulatively downloaded nearly 4.2 million times. Even after Google removed all these applications, Check Point discovered new sample of the malware in the Google Play store. So, we can not only rely on Google Play Protected security suite.\\
+
+Antivirus software is designed to detect, prevent and take action against malicious software. It can either disarm or remove the malicious software. Antivirus scans the file comparing specific pattern in the code against the signature of viruses which already stored in database. If pattern matches, then it is considered as malicious. If a new type of malicious application will come, then it will not be identified by the current antivirus. In that case, from security perspective, application may access user's private data and perform security-sensitive operations on the device.\\
+
+In the current scenario, Android security revolves around the permissions. Applications ask for all the permission that it needs. If required permission is not given to the application, applications does not work properly. Since, applications need all the permission to work we can not restrict particular feature of applications that is causing malicious activity.\\
+
+For providing the security to user's private data and device, our approach is to restrict the behaviour change of Android application and also to restrict them from doing any malicious activity. To achieve our goal we are doing the following things:
+\begin{itemize}
+    \item We are doing the static and dynamic analysis of the application to gather information about permissions and Application Program Interfaces (APIs). Based on permissions and APIs, we are trying to figure out what can be the possible behaviour of application.
+    \item We are building App Classification Model to check whether application is benign or malicious.
+    \item We try to restrict the malicious behaviour of application by wrapping the application.
+\end{itemize}
+
+%-----------------------------------------------------------------------------------------------------------------%
+\paragraph{Organisation:} In the following chapter, that is Chapter 2, we provide background and related work. In Chapter 3, we provide details about the Android software stack architecture and describe only the components of the stack that are relevant to our work. In Chapter 4, we present our approach and also provide analysis of some prominent applications on application store of Android. In Chapter 5, we present our classification models that help us determine/classify whether an app is benign or malicious. In Chapter 6, we show how to restrict malicious intent of an application and also talks about case studies of various applications and  we conclude with possible future work in Chapter 8.

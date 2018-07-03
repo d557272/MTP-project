@@ -1,0 +1,161 @@
+% This file contains the templates for the first few pages of the thesis including 
+% 1. Title page
+% 2. Dedication
+% 3. Dissertation approval
+% 4. Declaration of authorship
+% 5. Abstract
+
+
+%   1. TITLE
+\newcommand{\titlePage}{
+
+% No page number
+\thispagestyle{empty}
+\begin{center}
+% thesis title
+\vspace*{15px}
+{\Huge\bfseries \thesisTitle}\\[1.0cm] 
+
+% submitted in partial fulfillment etc.
+%\text{M. Tech. Dissertation}
+
+\textit{Submitted in partial fulfillment of the requirements of the degree of\\[0.2cm] \degree}\\[1.0cm]
+ 
+% author
+\textit{by}\\[0.2cm]
+\authorName \\[0.2cm] \textit{\textbf{Roll no.}} \rollNo \\[2.0cm]
+
+% supervisor
+\textit{Supervisor:}\\[0.2cm]
+% or
+% \textit{under the supervision of}\\[0.2cm]
+\supervisorOne \\[2.0cm]
+
+% iit-b logo
+\includegraphics[width=0.25\textwidth]{iitb_logo.jpg}
+
+\vspace*{5px}
+% department and college
+\dept\\
+\college\\
+% year
+\currentyear\\[0.1cm] 
+\end{center}
+\clearpage
+}
+%   2. DEDICATION
+%\newcommand{\dedication}{
+%\thispagestyle{empty}
+%\vspace*{75px}
+%\begin{center}\large{\textit{Dedicated to ...}}\end{center}
+
+%\clearpage
+%}
+%   3. DISSERTATION APPROVAL
+
+\newcommand{\approval}{
+% if you use a dedication, then use a page number with the plain page style
+\thispagestyle{plain}
+% else, use no page number with the empty page style
+%\thispagestyle{empty}
+
+
+% page title
+\begin{center}{\huge\bf Dissertation Approval\par}\end{center}
+
+\vspace*{15px}
+
+\noindent This project report entitled 
+% title
+\textbf{``\thesisTitle"}, submitted by 
+% author
+\authorName ~(Roll No.  \rollNo), is approved for the award of degree of 
+% degree
+\degree 
+~in 
+% branch
+Computer Science \& Engineering.\\[1.0cm]
+% examiners and supervisors
+\vspace*{35px}
+\begin{center}
+\rule{150pt}{2pt}\\
+\textbf{Prof. R.K. Shyamasundar}\\
+Dept. of CSE, IIT Bombay\\
+Supervisor\\[1.5cm]
+\end{center}
+\vspace*{10px}
+\noindent \rule{150pt}{2pt} \hfill \rule{150pt}{2pt}\\
+\textbf{Prof. G. Sivakumar} \hfill \textbf{Prof. Bernard Menezes}\\
+Dept. of CSE, IIT Bombay \hfill Dept. of CSE, IIT Bombay\\
+Internal \& External Examiner \hfill Internal Examiner\\[1.0cm]
+
+\vspace*{30px}
+\noindent \textbf{Date:} ...... \currentmonth { } \currentyear\\[0.3cm]
+\textbf{Place:}\quad\rule{0.4\textwidth}{.3pt} 
+
+% start a new page
+\clearpage
+}
+
+%   4. DECLARATION OF AUTHORSHIP
+\newcommand{\authorship}{
+\thispagestyle{plain}
+
+\begin{center}{\huge\bf Declaration of Authorship\par}\end{center}
+
+\vspace*{15px}
+
+% institute declaration text
+\noindent I declare that this written submission represents my ideas in 
+my own words and where others' ideas or words have been included, I have adequately cited and 
+referenced the original sources.  I also declare that I have adhered to all principles of academic 
+honesty and integrity and   have   not   misrepresented   or   fabricated   or   falsified   
+any   idea/data/fact/source   in   my submission.  I understand that any violation of the above 
+will be cause for disciplinary action by the Institute and can also evoke  penal action from the 
+sources which have thus not been properly cited or from whom proper permission has not been taken when needed.
+
+\vspace*{15px}
+
+% signature
+\begin{flushright}
+{Signature: ......................................\\[0.4cm]}
+
+% author name
+{\textbf{\authorName}\\[0.0cm]\rollNo\\[2.0cm]}
+
+\end{flushright}
+% date
+\begin{flushleft}
+{Date: ...... \currentmonth { } \currentyear\\}
+\end{flushleft}
+
+
+% start a new page
+\clearpage 
+}
+
+%   5. ABSTRACT
+\newcommand{\abstractpage}{
+\thispagestyle{plain}
+
+% header-type text for the abstract - optional
+% \small {\noindent\authorName/ \supervisorOne{ }(Supervisor): \textbf{``\thesisTitle"}, \textit{MTech Project}, \dept, \college, \currentmonth { } \currentyear.}\\[0.0cm]
+% \HRule\\[0.2cm]
+
+
+% \vspace*{10px}
+
+\begin{center}{\huge{\textit {Abstract}}\par}\end{center}
+
+\vspace*{10px}
+
+% Abstract text - Type abstract here
+In recent past smart-phones have become very popular due to their utility in obtaining online services and increasing level of user convenience. The cost of smart-phones is falling and increasing number of laymen are using such devices installed with utility applications. Android operating system runs on nearly 82\% of these smart-phones available today. As in the case of desktop operating systems, mobile operating systems too are prone to viruses and malware and there is a steep increase in malicious Apps on Android's application store from where the users install their applications. There exists techniques and methods that are developed to check whether an application is benign or malicious. Applications are checked before they are uploaded to the applications store. The statistics shows that the existing approaches are falling short. Most of the works classify applications into categories based on certain models. Accuracy of these models has direct impact on the security of the user data these applications have access to on a smart-phone. Sometimes malicious applications are also classified as benign. In such cases, there can be serious security breaches as the application makes its way to users' smart-phones via application store. The main idea of our approach is to restrict the malicious behaviour of applications to provide the security to user's private data and device itself. We have done dynamic and static analysis of applications to know the behaviour of applications. We have build classification models using various machine learning techniques to classify the applications as benign or malicious. If applications are classified as malicious, we have restricted its malicious behaviour without modifying apk file. We have used wrappper around the applications such that applications work normally even after restrictions.
+\\[0.2cm]
+
+% Index terms
+% \noindent \textbf{Index terms}: Sentiment 
+
+% Start a new page
+\clearpage 
+}

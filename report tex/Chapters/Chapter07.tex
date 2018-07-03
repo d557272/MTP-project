@@ -1,0 +1,75 @@
+% Main chapter title
+\chapter{Case Study}
+\label{ch:dl}
+
+% This is for the header on each page
+\lhead{Chapter 4. \emph{Case Study}}
+
+We have analyzed 10 applications. After analyzing, we have categorized the applications into classes namely benign and malicious. Following applications have been labelled as the benign:
+\begin{itemize}
+    \item Budget Planner
+    \item BHIM Making India Cashless
+    \item Tez: A new payment app by Google
+    \item Google Calendar
+\end{itemize}
+Since, these applications are benign we do not have to restrict any permissions of the applications. Following applications have been labelled as the malicious:
+\begin{itemize}
+    \item Funnyys
+    \item Omingo
+    \item System Certificate
+    \item MMS Beline
+    \item Laughtter
+    \item Android Framework
+\end{itemize}
+
+Since, these applications are malicious we have restricted its malicious behaviour by wrapping it. Permissions which are causing malicious behaviour is denied.\\
+{\Large \textbf{Funnyys}}\\
+Funnys is an online game applications, so it does not require permissions to access message, phone and camera. So we have restricted the following permissions for Funnys application:
+\begin{itemize}
+    \item \texttt{android.permission.SEND\_SMS}
+\item \texttt{android.permission.RECEIVE\_SMS}
+\item \texttt{android.permission.WRITE\_SMS}
+\item \texttt{android.permission.READ\_SMS}
+\item \texttt{android.permission.CAMERA}
+\item \texttt{android.permission.READ\_PHONE\_STATE}
+\end{itemize}\\
+{\Large \textbf{Omingo}}\\
+This app lets hackers control your device, giving them unauthorized access to your data. To prevent the malicious behaviour of this application, we have restricted following permissions:
+\begin{itemize}
+    \item \texttt{android.permission.RECEIVE\_SMS}
+\item \texttt{android.permission.SEND\_SMS}
+\item \texttt{android.permission.WRITE\_APN\_SETTINGS}
+\item \texttt{android.permission.CLEAR\_APP\_CACHE}
+\item \texttt{android.permission.READ\_SMS}
+\item \texttt{android.permission.RECEIVE\_WAP\_PUSH}
+\item \texttt{android.permission.INSTALL\_PACKAGES}
+\item \texttt{android.permission.CLEAR\_APP\_USER\_DATA}
+\item \texttt{android.permission.MOUNT\_UNMOUNT\_FILESYSTEMS}
+\item \texttt{android.permission.RECEIVE\_BOOT\_COMPLETED}
+\item \texttt{android.permission.DELETE\_CACHE\_FILES}
+\item \texttt{android.permission.WRITE\_EXTERNAL\_STORAGE}
+\item \texttt{android.permission.REBOOT}
+\item \texttt{android.permission.RESTART\_PACKAGES}
+\item \texttt{android.permission.DELETE\_PACKAGES}
+\end{itemize}\\
+{\Large \textbf{System Certificate}}\\
+System Certificate  is a fake application which can damage your device and steal your data. To stop its malicious intent, we have restricted the following permissions:
+\begin{itemize}
+    \item \texttt{android.permission.INTERNET}
+\end{itemize}\\
+{\Large \textbf{MMS Beline}}\\
+MMS Beline is a third party application which can increase your mobile bill by sending message and by calling to the premium number. This application is installed by another malicious applications. It runs in background. We have to uninstall this application because this application is of no use.\\
+{\Large \textbf{Lughtter}}\\
+It is another application which can add charges to your mobile bill by sending costly SMS message without informing you first. So we have restricted the following permissions:
+\begin{itemize}
+    \item \texttt{android.permission.SEND\_SMS}
+\item \texttt{android.permission.RECEIVE\_SMS}
+\item \texttt{android.permission.WRITE\_SMS}
+\item \texttt{android.permission.READ\_SMS}
+\item \texttt{android.permission.CAMERA}
+\item \texttt{android.permission.READ\_PHONE\_STATE}
+\end{itemize}\\
+{\Large \textbf{Android Framework}}\\
+Android Framework is a third party application which can increase your mobile bill by sending message and by calling to the premium number. It can install other malicious applications to your device. So we have to uninstall this application.
+{\Large \textbf{Duet}}\\
+Duet is a game. We have restricted access to identification, internet, location, phone, and view. Though, we have restricted some access for application still it is working properly. 

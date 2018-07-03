@@ -1,0 +1,32 @@
+% Main chapter title
+\chapter{Background \& Related Work}
+\label{ch:sentiment}
+
+% This is for the header on each page
+\lhead{Chapter 2. \emph{Related Work \& Background}}
+\thispagestyle{empty}
+Android operating system has five layer in its software stack. There are multiple applications running on the top of operating system. To provide the security to one application from other applications and to Android operating system from applications Android uses uses virtual machines. Every Android application runs  in its own process, with its own instance of the Dalvik virtual machine (DVM) \cite{wiki:dalvik} / Android Runtime (ART) \cite{androidruntime}. Since, all Android applications run in its own virtural machine, they can not affect the execution of each other and also they can affect Android operating system functionality.
+
+To check the behaviour of Android applications various technique and tools have been developed. Androwarn is a tool to analyze the applications \cite{androwarn}. Androwarn does the static analysis of the application's Dalvik bytecode, represented as Smali and provides the detail about possible malicious behaviour of applications. Flowdroid uses call graphs of the application to analyze the behaviour of the application \cite{arzt2014flowdroid}. Static analysis of application can be done on the basis of permissions it requires \cite{johnson2012analysis}. Another way of static anaysis is to check the behaviour of kernel to provide the behaviour of applications \cite{isohara2011kernel}. 
+
+Droidmate \cite{jamrozik2016droidmate} does the dynamic analysis of application by clicking on various UI element and traces the API calls made. Crowdroid \cite{burguera2011crowdroid} detects the malicious behaviour by analyzing data collected from two sets: one from those from artiﬁcial malware created for test purposes, and those from real malware found in the wild. To detect malware in Android applications various methods and techniques have developed. Some of those approaches are:
+\\
+\\
+\textbf{Permission based approach}\\
+To stop malware installation permission based system has been developed. While installation applications ask for permission to access sensitive resources. Based on requested permission a classifier has been developed to identify benign and malicious application.
+\textbf{Two-layered permission based approach}\\
+In this method, they analyzed data from two types of permissions namely \textit{requested permissions} and \textit{used permissions}. After analyzing requested permissions, they make classifier to classify applications int benign and malware. After this classification, they make another classifier by analyzing used permissions to identify malware.\\
+\textbf{Malware detection using static feature-based analysis}\\
+This approach uses various static information such as permissions, deployment of components, intent message passing and API calls for characterizing the Android application behaviour. After extracting the above information one can
+\begin{enumerate}
+    \item applies K-means algorithm to classify applications into benign and malware.
+    \item can generate a model using KNN classifier for detecting malware.
+\end{enumerate}
+\textbf{Malware detection using hybrid of static and dynamic analysis}\\
+By static analysis, it extracts expected activity switch paths by analyzing both Activity and Function Call Graphs. Then it uses dynamic analysis to traverse each UI elements and explore the UI interactions paths towards sensitive APIs. Using these data, they create a model to detect malware.\\
+\textbf{Behaviour-based malware detection system}\\
+They firstly gather test data and actual processed data, it processes the data and try to figure out some patterns in the data that can be used to differentiate benign applications and malicious applications. They use different machine learning techniques to find the pattern in the data. After finding the pattern, they make classifier to identify the malware.\\
+\textbf{By analyzing usage of sensitive data}\\
+In this method, they firstly analyze the flow of sensitive data in benign applications and then try same for malicious applications. From these data, they implements different type of classifier to detect malicious applications.
+
+%-----------------------------------------------------------------------------%
