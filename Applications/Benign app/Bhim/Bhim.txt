@@ -1,0 +1,53 @@
+Bhim application
+
+
+Declare:-19
+--------------------------------------------------------------------------------------
+\item android.permission.SEND\_SMS
+\item android.permission.RECEIVE\_SMS
+\item android.permission.READ\_CONTACTS
+\item android.permission.CALL\_PHONE
+\item android.permission.READ\_SMS
+\item android.permission.READ\_PROFILE
+\item android.permission.RECEIVE\_BOOT\_COMPLETED
+\item android.permission.WRITE\_EXTERNAL\_STORAGE
+\item android.permission.ACCESS\_FINE\_LOCATION
+\item android.permission.ACCESS\_COARSE\_LOCATION
+\item android.permission.INTERNET
+\item android.permission.ACCESS\_NETWORK\_STATE
+\item in.org.npci.upiapp.permission.C2D\_MESSAGE
+\item android.permission.WAKE\_LOCK
+\item android.permission.ACCESS\_WIFI\_STATE
+\item android.permission.CAMERA
+\item android.permission.READ\_EXTERNAL\_STORAGE
+\item android.permission.READ\_PHONE\_STATE
+\item com.google.android.c2dm.permission.RECEIVE
+
+Required and Used:-6
+---------------------------------------------------------------------------------------
+\item android.permission.ACCESS\_FINE\_LOCATION
+\item android.permission.ACCESS\_COARSE\_LOCATION
+\item android.permission.INTERNET
+\item android.permission.ACCESS\_NETWORK\_STATE
+\item android.permission.WAKE\_LOCK
+\item android.permission.READ\_PHONE\_STATE
+
+Required but not Used:-13
+---------------------------------------------------------------------------------------
+\item android.permission.SEND\_SMS
+\item android.permission.RECEIVE\_SMS
+\item android.permission.READ\_CONTACTS
+\item android.permission.CALL\_PHONE
+\item android.permission.READ\_SMS
+\item android.permission.READ\_PROFILE
+\item android.permission.RECEIVE\_BOOT\_COMPLETED
+\item android.permission.WRITE\_EXTERNAL\_STORAGE
+\item in.org.npci.upiapp.permission.C2D\_MESSAGE
+\item android.permission.ACCESS\_WIFI\_STATE
+\item android.permission.CAMERA
+\item android.permission.READ\_EXTERNAL\_STORAGE
+\item com.google.android.c2dm.permission.RECEIVE
+
+Not required but used:-1
+---------------------------------------------------------------------------------------
+\item android.permission.VIBRATE

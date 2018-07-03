@@ -1,0 +1,56 @@
+Tez application
+
+
+Declare:-20
+--------------------------------------------------------------------------------------
+\item android.permission.SEND_SMS
+\item android.permission.RECEIVE_SMS
+\item android.permission.READ_CONTACTS
+\item android.permission.GET_ACCOUNTS
+\item android.permission.READ_SMS
+\item android.permission.GET_PACKAGE_SIZE
+\item android.permission.VIBRATE
+\item android.permission.RECORD_AUDIO
+\item android.permission.RECEIVE_BOOT_COMPLETED
+\item android.permission.ACCESS_FINE_LOCATION
+\item android.permission.INTERNET
+\item android.permission.ACCESS_NETWORK_STATE
+\item android.permission.WAKE_LOCK
+\item android.permission.ACCESS_WIFI_STATE
+\item android.permission.CAMERA
+\item android.permission.BLUETOOTH
+\item android.permission.MANAGE_ACCOUNTS
+\item android.permission.READ_PHONE_STATE
+\item com.google.android.c2dm.permission.RECEIVE
+\item com.google.android.providers.gsf.permission.READ_GSERVICES
+
+Required and Used:-6
+---------------------------------------------------------------------------------------
+\item android.permission.INTERNET
+\item android.permission.VIBRATE
+\item android.permission.ACCESS_NETWORK_STATE
+\item android.permission.WAKE_LOCK
+\item android.permission.BLUETOOTH
+\item android.permission.READ_PHONE_STATE
+
+Required but not Used:-14
+---------------------------------------------------------------------------------------
+\item android.permission.SEND_SMS
+\item android.permission.RECEIVE_SMS
+\item android.permission.READ_CONTACTS
+\item android.permission.GET_ACCOUNTS
+\item android.permission.READ_SMS
+\item android.permission.GET_PACKAGE_SIZE
+\item android.permission.RECORD_AUDIO
+\item android.permission.RECEIVE_BOOT_COMPLETED
+\item android.permission.ACCESS_FINE_LOCATION
+\item android.permission.ACCESS_WIFI_STATE
+\item android.permission.CAMERA
+\item android.permission.MANAGE_ACCOUNTS
+\item com.google.android.c2dm.permission.RECEIVE
+\item com.google.android.providers.gsf.permission.READ_GSERVICES
+
+Not required but used:-2
+---------------------------------------------------------------------------------------
+\item android.permission.ACCESS_COARSE_LOCATION
+\item android.permission.MODIFY_AUDIO_SETTINGS
