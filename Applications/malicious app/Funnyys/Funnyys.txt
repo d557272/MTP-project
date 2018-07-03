@@ -1,0 +1,39 @@
+Funnyys application
+
+
+Declare:-12
+--------------------------------------------------------------------------------------
+\item android.permission.SEND_SMS
+\item android.permission.RECEIVE_SMS
+\item android.permission.WRITE_SMS
+\item android.permission.READ_SMS
+\item android.permission.VIBRATE
+\item android.permission.WRITE_EXTERNAL_STORAGE
+\item android.permission.CHANGE_WIFI_STATE
+\item android.permission.INTERNET
+\item android.permission.ACCESS_NETWORK_STATE
+\item android.permission.ACCESS_WIFI_STATE
+\item android.permission.CAMERA
+\item android.permission.READ_PHONE_STATE
+
+Required and Used:-4
+---------------------------------------------------------------------------------------
+\item android.permission.CHANGE_WIFI_STATE
+\item android.permission.INTERNET
+\item android.permission.ACCESS_NETWORK_STATE
+\item android.permission.ACCESS_WIFI_STATE
+
+Required but not Used:-8
+---------------------------------------------------------------------------------------
+\item android.permission.SEND_SMS
+\item android.permission.RECEIVE_SMS
+\item android.permission.WRITE_SMS
+\item android.permission.READ_SMS
+\item android.permission.VIBRATE
+\item android.permission.WRITE_EXTERNAL_STORAGE
+\item android.permission.CAMERA
+\item android.permission.READ_PHONE_STATE
+
+Not required but used:-1
+---------------------------------------------------------------------------------------
+\item android.permission.WAKE_LOCK

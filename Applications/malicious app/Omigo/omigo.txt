@@ -1,0 +1,63 @@
+omigo application
+
+
+Declare:-20
+--------------------------------------------------------------------------------------
+\item android.permission.READ_SMS
+\item android.permission.INSTALL_PACKAGES
+\item android.permission.CLEAR_APP_USER_DATA
+\item android.permission.RECEIVE_BOOT_COMPLETED
+\item android.permission.DELETE_CACHE_FILES
+\item android.permission.WRITE_EXTERNAL_STORAGE
+\item android.permission.REBOOT
+\item android.permission.ACCESS_NETWORK_STATE
+\item android.permission.WAKE_LOCK
+\item android.permission.ACCESS_WIFI_STATE
+\item android.permission.DELETE_PACKAGES
+\item android.permission.RECEIVE_SMS
+\item android.permission.SEND_SMS
+\item android.permission.WRITE_APN_SETTINGS
+\item android.permission.CLEAR_APP_CACHE
+\item android.permission.RECEIVE_WAP_PUSH
+\item android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+\item android.permission.RESTART_PACKAGES
+\item android.permission.CHANGE_WIFI_STATE
+\item android.permission.INTERNET
+\item android.permission.CHANGE_NETWORK_STATE
+\item android.permission.SET_WALLPAPER
+\item android.permission.READ_PHONE_STATE
+
+Required and Used:-4
+---------------------------------------------------------------------------------------
+\item android.permission.INTERNET
+\item android.permission.ACCESS_NETWORK_STATE
+\item android.permission.ACCESS_WIFI_STATE
+\item android.permission.READ_PHONE_STATE
+
+Required but not Used:-19
+---------------------------------------------------------------------------------------
+\item android.permission.RECEIVE_SMS
+\item android.permission.SEND_SMS
+\item android.permission.WRITE_APN_SETTINGS
+\item android.permission.CLEAR_APP_CACHE
+\item android.permission.READ_SMS
+\item android.permission.RECEIVE_WAP_PUSH
+\item android.permission.INSTALL_PACKAGES
+\item android.permission.CLEAR_APP_USER_DATA
+\item android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+\item android.permission.RECEIVE_BOOT_COMPLETED
+\item android.permission.DELETE_CACHE_FILES
+\item android.permission.WRITE_EXTERNAL_STORAGE
+\item android.permission.REBOOT
+\item android.permission.RESTART_PACKAGES
+\item android.permission.CHANGE_WIFI_STATE
+\item android.permission.WAKE_LOCK
+\item android.permission.CHANGE_NETWORK_STATE
+\item android.permission.SET_WALLPAPER
+\item android.permission.DELETE_PACKAGES
+
+Not required but used:-3
+---------------------------------------------------------------------------------------
+\item android.permission.ACCESS_FINE_LOCATION
+\item android.permission.ACCESS_COARSE_LOCATION
+\item android.permission.VIBRATE

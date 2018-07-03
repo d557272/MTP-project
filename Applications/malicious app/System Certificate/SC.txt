@@ -1,0 +1,25 @@
+SystemCertificate application
+
+
+Declare:-5
+--------------------------------------------------------------------------------------
+\item android.permission.INTERNET
+\item android.permission.ACCESS_NETWORK_STATE
+\item android.permission.WAKE_LOCK
+\item android.permission.ACCESS_WIFI_STATE
+\item android.permission.READ_PHONE_STATE
+
+Required and Used:-4
+---------------------------------------------------------------------------------------
+\item android.permission.INTERNET
+\item android.permission.ACCESS_NETWORK_STATE
+\item android.permission.ACCESS_WIFI_STATE
+\item android.permission.READ_PHONE_STATE
+
+Required but not Used:-1
+---------------------------------------------------------------------------------------
+\item android.permission.WAKE_LOCK
+
+Not required but used:-2
+---------------------------------------------------------------------------------------
+
