@@ -1,0 +1,55 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
+
+    defaultConfig {
+        applicationId "eu.faircode.xlua"
+        minSdkVersion 23
+        targetSdkVersion 27
+        versionCode 118
+        versionName "1.23.17"
+        archivesBaseName = "XPrivacyLua-v$versionName-$versionCode"
+    }
+
+    buildTypes {
+        release {
+            shrinkResources true
+            minifyEnabled true
+            useProguard = true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            shrinkResources false
+            minifyEnabled false
+            useProguard = false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    // https://developer.android.com/topic/libraries/support-library/revisions.html
+    implementation 'com.android.support:appcompat-v7:27.+'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.+'
+    implementation 'com.android.support:recyclerview-v7:27.+'
+    implementation 'com.android.support:design:27.+'
+
+    // https://bumptech.github.io/glide/
+    // https://mvnrepository.com/artifact/com.github.bumptech.glide/glide
+    // { exclude group: "com.android.support" }
+    implementation 'com.github.bumptech.glide:glide:4.6.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.6.1'
+
+    // https://github.com/rovo89/XposedBridge/wiki/Using-the-Xposed-Framework-API
+    // https://bintray.com/rovo89/de.robv.android.xposed/api
+    compileOnly 'de.robv.android.xposed:api:82'
+    compileOnly 'de.robv.android.xposed:api:82:sources'
+
+    // http://www.luaj.org/luaj/3.0/README.html
+    // https://mvnrepository.com/artifact/org.luaj/luaj-jse
+    // implementation 'org.luaj:luaj-jse:3.0.1'
+}
